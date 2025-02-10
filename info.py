@@ -30,9 +30,9 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg h
 PRIME_LOGO = (environ.get('PRIME_LOGO', 'https://telegra.ph/file/ca18e2c794f4ea1c3135b.jpg'))
 
 # Admins, Channels & Users *
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '23009724').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2089142494').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002167205597').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '23009724').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '2089142494').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -55,7 +55,7 @@ lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) el
 PRIME_USERS = (lazydownloaders) if lazydownloaders else [] # users who can get & download file without url shortner
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '').split()]
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [] #Add user id of the user in this field those who you want to be Authentic user for file renaming features
-LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '23009724').split()]
+LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '2089142494').split()]
 
 QR_CODE_IMG = environ.get('QR_CODE_IMG','https://telegra.ph/file/ca18e2c794f4ea1c3135b.jpg') #add url link of your qr code to recieve money - use telegraph bot or other source to get image
 UPI_ID = environ.get('UPI_ID', 'lazydeveloper@ybl') #enter your upi id here - grab it from your online payment methods.
